@@ -38,7 +38,7 @@ const Projects = () => {
                                 <p className="text-zinc-300 mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tech.map((tech, index) => (
-                                        <span key={index} className="bg-gray-700 px-3 py-1 rounded-full text-sm text-zinc-200">{tech}</span>
+                                        <span key={index} className="bg-neutral-500 dark:bg-gray-700 font-semibold px-3 py-1 rounded-full text-sm text-zinc-200">{tech}</span>
                                     ))}
                                 </div>
                                 {project.link && (
