@@ -9,7 +9,7 @@ const Hero = () => {
                 <a href="/resume.pdf"
                 download
                 data-aos="fade-right"
-                className="px-6 py-2 bg-slate-700 dark:bg-blue-600 rounded-full text-white hover:scale-90 border border-zinc-700 hover:border-gray-500 hover:bg-gray-600 dark:hover:bg-blue-800 transition duration-300">
+                className="px-6 py-2 bg-slate-700 dark:bg-neutral-700 rounded-full text-white hover:scale-90 border border-zinc-700 hover:border-gray-500 hover:bg-neutral-600 dark:hover:bg-stone-800 transition duration-300">
                     Download resume
                 </a>
             </div>
