@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import RepoSkeleton from './RepoSkeleton';
+import { motion } from 'framer-motion';
 
 const GitHubRepos = ({ username }) => {
   const [repos, setRepos] = useState([]);
@@ -26,8 +27,9 @@ const GitHubRepos = ({ username }) => {
   }, [page]);
 
   return (
-    <section id="github" className="py-12 px-4 text-center bg-stone-500 dark:bg-gray-900 dark:text-white">
-      <h2 className="text-3xl font-bold mb-8">GitHub Projects</h2>
+    <motion.section id="github" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
+     className="py-12 px-4 text-center bg-stone-500 dark:bg-gray-900 dark:text-white">
+      <h2 data-aos="fade-right" className="text-3xl font-bold mb-8">GitHub Projects</h2>
       <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {loading
         ? Array.from({ length: 6 }).map((_, i) => <RepoSkeleton key={i} />)
@@ -67,7 +69,7 @@ const GitHubRepos = ({ username }) => {
           Next →
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

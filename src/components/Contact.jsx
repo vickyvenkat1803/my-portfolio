@@ -8,8 +8,8 @@ const Contact = () => {
             initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-3 dark:text-neutral-400">Contact Me</h2>
-                <p className="mb-6 text-slate-300">Feel free to reach out if you're like to collaborate or have any questions!</p>
+                <h2 data-aos="flip-right" className="text-3xl md:text-4xl font-bold mb-3 dark:text-neutral-400">Contact Me</h2>
+                <p data-aos="zoom-out" className="mb-6 text-slate-300">Feel free to reach out if you're like to collaborate or have any questions!</p>
                 <div className="flex justify-center gap-6 text-3xl text-stone-800 dark:text-cyan-700">
                     <a href="tel:+919842108257" target='_blank' rel='noopener noreferrer' className='hover:scale-110 hover:text-green-500 transition-transform duration-200'>
                         <FaPhoneAlt />

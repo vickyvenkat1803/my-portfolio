@@ -27,7 +27,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-10 dark:text-neutral-400">Projects</h2>
+                <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-bold mb-10 dark:text-neutral-400">Projects</h2>
                 <div className="grid gap-8 md:grid-cols-2">
                     {projects.map((project, index) => (
                         <div key={index}

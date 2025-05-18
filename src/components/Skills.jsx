@@ -9,7 +9,7 @@ const Skills = () => {
             initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}  transition={{ duration: 0.6 }}
             viewport={{ once: true }}>
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8 dark:text-neutral-400">Skills</h2>
+                <h2 data-aos="fade-left" className="text-3xl md:text-4xl font-bold mb-8 dark:text-neutral-400">Skills</h2>
                 <div className="flex flex-wrap justify-center gap-4">
                     {skills.map((skill, index) => (
                         <span
